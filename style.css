@@ -80,9 +80,8 @@ p
     padding: 0 16px;
     overflow: hidden;
     width: 100%;
+    height: 25%;
     background-color: #FFF;
-    position: fixed;
-    margin: -24px;
 }
 
 header li
@@ -107,15 +106,17 @@ header li a:hover
 #botaoMenu
 {
     position: absolute;
-    left: 12px;
+    left: 14px;
+    padding-left: 1rem;
 }
+
 
 nav
 {
     display: none;
     flex-direction: column;
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 25%;
     position: absolute;
     left: 0; 
     top: 0;
@@ -127,13 +128,14 @@ nav ul
 {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 nav ul li
 {
-    margin-top: 48px;
     color: var(--azul-claro);
     font-size: 1.4rem;
+ 
 }
 
 #posGraduacao
@@ -287,7 +289,7 @@ footer a
     justify-content: space-around;
 }
 
-@media screen and (min-width: 900px)
+@media screen and (min-width: 1024px)
 {
 
     #cabeca
@@ -295,10 +297,12 @@ footer a
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 16px;
         overflow: hidden;
+        padding: 0 16px;
         width: 100%;
         background-color: #FFF;
+        position: fixed;
+        margin: -24px;
     }
 
     #botaoMenu
